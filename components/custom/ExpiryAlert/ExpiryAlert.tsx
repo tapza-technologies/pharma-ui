@@ -33,7 +33,7 @@ export const ExpiryAlert = () => {
   };
 
   return (
-    <CardWrapper className="w-[30vw] p-[20px]">
+    <CardWrapper className="w-[35vw] p-[20px]">
       <div className="flex flex-row justify-between items-center">
         <div className="flex flex-row gap-2 items-center">
           <Image src="/icons/warning.svg" alt="Expiry" width={20} height={20} />

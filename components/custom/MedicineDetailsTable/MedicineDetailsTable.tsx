@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
-const itemsPerPage = 8;
+const itemsPerPage = 7;
 
 const mockData = [
   {
