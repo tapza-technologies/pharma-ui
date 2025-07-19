@@ -3,7 +3,7 @@ import { CardWrapper } from "@/components/custom/CardWrapper/CardWrapper";
 import { CreditLedger } from "@/components/custom/CreditLedger/CreditLedger";
 import { ExpiryAlert } from "@/components/custom/ExpiryAlert/ExpiryAlert";
 import Image from "next/image";
-import { ProductCountCard } from "@/components/custom/productCountCard/ProductCountCard";
+import { ProductCountCard } from "@/components/custom/ProductCountCard/ProductCountCard";
 
 export default function Home() {
   const cardConfig = [

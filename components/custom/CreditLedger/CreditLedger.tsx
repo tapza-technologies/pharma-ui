@@ -22,6 +22,15 @@ const mockData = Array.from({ length: 15 }).map((_, i) => ({
 
 const itemsPerPage = 5
 
+export const TableHeaderItem = ({text}: {text: string}) => {
+    return (
+        <div className="flex flex-row gap-2 items-center">
+            <Image src="/icons/progress-icon.svg" alt="Info" width={14} height={14} />
+            <span>{text}</span>
+        </div>
+    )
+}
+
 export const CreditLedger = () => {
   const [page, setPage] = useState(1)
   const totalPages = Math.ceil(mockData.length / itemsPerPage)
@@ -36,18 +45,29 @@ export const CreditLedger = () => {
         <TableHeader>
           <TableRow>
             <TableHead>
-                <div className="flex flex-row gap-2 items-center">
-                <Image src="/icons/table-header-pill-icon.svg" alt="Info" width={14} height={14} />
-                    <span>Sr No</span>
-                </div>
+                <TableHeaderItem text="Sr No"/>
             </TableHead>
-            <TableHead>Invoice Number</TableHead>
-            <TableHead>Customer Name</TableHead>
-            <TableHead>Date</TableHead>
-            <TableHead>Total Amount</TableHead>
-            <TableHead>Paid Amount</TableHead>
-            <TableHead>Due Amount</TableHead>
-            <TableHead>Status</TableHead>
+            <TableHead>
+                <TableHeaderItem text="Invoice Number"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Customer Name"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Date"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Total Amount"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Paid Amount"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Due Amount"/>
+            </TableHead>
+            <TableHead>
+                <TableHeaderItem text="Status"/>
+            </TableHead>
             <TableHead></TableHead>
           </TableRow>
         </TableHeader>
