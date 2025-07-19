@@ -1,5 +1,7 @@
 import { Card } from "@/components/custom/Card/Card";
 import { CardWrapper } from "@/components/custom/CardWrapper/CardWrapper";
+import { CreditLedger } from "@/components/custom/CreditLedger/CreditLedger";
+import { ExpiryAlert } from "@/components/custom/ExpiryAlert/ExpiryAlert";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -52,7 +54,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="px-[64px] bg-muted min-h-screen">
+    <div className="px-[64px] bg-muted min-h-screen pb-[48px]">
 
       <div className="flex flex-row gap-4 pt-[32px]">
         <div className="flex flex-col gap-[12px]">
@@ -72,6 +74,14 @@ export default function Home() {
           })}
         </div>
       </CardWrapper>
+
+      <div className="mt-[48px]">
+        <ExpiryAlert/>
+      </div>
+
+      <div className="mt-[48px]">
+        <CreditLedger/>
+      </div>
     </div>
   );
 }
