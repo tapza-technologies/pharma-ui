@@ -11,7 +11,7 @@ export type ProductCountCardProps = {
   }: ProductCountCardProps) => {
     return (
       <div
-        className="rounded-xl w-[300px] h-[150px] p-[20px] flex flex-col gap-[20px]"
+        className="rounded-xl w-[25vw] h-[150px] p-[20px] flex flex-col gap-[20px]"
         style={{ background: "var(--Color-Neutral-neutral-lightest, #F7F7F9)" }}
       >
         {icon}

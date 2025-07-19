@@ -10,12 +10,12 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-muted p-4">
       <div className="bg-white rounded-xl shadow-xl overflow-hidden w-full max-w-5xl grid grid-cols-1 md:grid-cols-2">
         {/* Left Side Image & Text */}
-        <div className="bg-blue-600 text-white flex flex-col items-center justify-center p-8">
+        <div className="bg-[#4179D9] text-white flex flex-col items-center justify-center p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">Welcome to HMS</h2>
           <p className="text-center text-sm mb-6">
             Your one-stop solution for streamlined hospital management and patient care.
           </p>
-          <div className="relative w-full h-96">
+          {/* <div className="relative w-full h-96">
             <Image
               src="/login-image.png" // replace with your actual image path
               alt="Doctors"
@@ -23,17 +23,18 @@ export default function Login() {
               className="object-contain"
               priority
             />
-          </div>
+          </div> */}
         </div>
 
         {/* Right Side Login Form */}
-        <div className="p-8 md:p-12 flex flex-col justify-center">
-          <h3 className="text-2xl font-bold mb-6">Login</h3>
+        <div className="p-8 md:p-12 flex flex-col justify-center gap-[8px]">
+          <h3 className="text-2xl font-bold mb-6 text-center">Login</h3>
 
           {/* Role Dropdown */}
-          <Label htmlFor="role">Role</Label>
-          <Select>
-            <SelectTrigger className="mb-4">
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="role">Role</Label>
+            <Select>
+              <SelectTrigger className="mb-4 w-full py-[20px]">
               <SelectValue placeholder="Select Item" />
             </SelectTrigger>
             <SelectContent>
@@ -42,14 +43,19 @@ export default function Login() {
               <SelectItem value="nurse">Nurse</SelectItem>
             </SelectContent>
           </Select>
+          </div>
 
           {/* Username */}
-          <Label htmlFor="username">Username</Label>
-          <Input id="username" placeholder="Enter your username" className="mb-4" />
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="username">Username</Label>
+            <Input id="username" placeholder="Enter your username" className="mb-4 py-[20px]" />
+          </div>
 
           {/* Password */}
-          <Label htmlFor="password">Password</Label>
-          <Input id="password" type="password" placeholder="Enter your password" className="mb-2" />
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="password">Password</Label>
+            <Input id="password" type="password" placeholder="Enter your password" className="mb-2 py-[20px]" />
+          </div>
 
           {/* Remember me and Forgot Password */}
           <div className="flex items-center justify-between mb-4 text-sm">
@@ -61,7 +67,7 @@ export default function Login() {
           </div>
 
           {/* Submit Button */}
-          <Button className="w-full">Sign in</Button>
+          <Button className="w-full bg-[#4179D9] text-white py-[24px]">Sign in</Button>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ const mockData = [
   { id: 15, medicine: "Amoxicillin 250mg", qty: 500, threshold: 1000 },
 ];
 
-const itemsPerPage = 5;
+const itemsPerPage = 8;
 
 function getStockStatus(qty: number, threshold: number) {
   if (threshold === 0) return { percent: 100, color: "bg-yellow-400" };
@@ -78,9 +78,9 @@ export const StockOverviewTable = () => {
             const { percent, color } = getStockStatus(item.qty, item.threshold);
             return (
               <TableRow key={item.id} className="border-none h-[55px]">
-                <TableCell>{item.medicine}</TableCell>
-                <TableCell>{item.qty}</TableCell>
-                <TableCell>{item.threshold}</TableCell>
+                <TableCell className="w-[350px]">{item.medicine}</TableCell>
+                <TableCell className="w-[200px]">{item.qty}</TableCell>
+                <TableCell className="w-[200px]">{item.threshold}</TableCell>
                 <TableCell>
                   <div className="flex items-center gap-2">
                     <div className="w-32 h-4 bg-gray-100 rounded overflow-hidden">

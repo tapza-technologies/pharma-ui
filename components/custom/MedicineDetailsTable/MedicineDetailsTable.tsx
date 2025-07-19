@@ -107,9 +107,9 @@ export const MedicineDetailsTable = () => {
   );
 
   return (
-    <CardWrapper>
+    <CardWrapper className="w-full">
       <div className="mb-4 flex justify-between items-center">
-        <h2 className="text-lg font-semibold">Credit Ledger</h2>
+        <h2 className="text-lg font-semibold">Medicine Details</h2>
       </div>
       <Table>
         <TableHeader>
@@ -169,7 +169,7 @@ export const MedicineDetailsTable = () => {
       </Table>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between mt-4">
+      <div className="flex items-center justify-center mt-4 gap-[35px]">
         <div className="text-sm text-muted-foreground">
           Page {page} of {totalPages}
         </div>

@@ -97,7 +97,7 @@ export const CreditLedger = () => {
       </Table>
 
       {/* Pagination */}
-      <div className="flex items-center justify-between mt-4">
+      <div className="flex items-center justify-center mt-4 gap-[35px]">
         <div className="text-sm text-muted-foreground">
           Page {page} of {totalPages}
         </div>

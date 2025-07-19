@@ -24,7 +24,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div
-      className="rounded-xl w-[600px] p-[24px]"
+      className="rounded-xl p-[24px] flex-1"
       style={{ background: backgroundColor }}
     >
       <div className="flex flex-col gap-[20px]">
