@@ -8,8 +8,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
-testng
-
 ```bash
 npm run dev
 # or
