@@ -4,6 +4,7 @@ import { CreditLedger } from "@/components/custom/CreditLedger/CreditLedger";
 import { ExpiryAlert } from "@/components/custom/ExpiryAlert/ExpiryAlert";
 import Image from "next/image";
 import { ProductCountCard } from "@/components/custom/ProductCountCard/ProductCountCard";
+import { MedicineDetailsTable } from "@/components/custom/MedicineDetailsTable/MedicineDetailsTable";
 
 export default function Home() {
   const cardConfig = [
@@ -104,8 +105,9 @@ export default function Home() {
         </div>
       </CardWrapper>
 
-      <div className="mt-[48px]">
+      <div className="mt-[48px] flex flex-row gap-4">
         <ExpiryAlert />
+        <MedicineDetailsTable />
       </div>
 
       <CardWrapper className="p-[24px] mt-[48px] flex flex-col gap-[20px]">
