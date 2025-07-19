@@ -5,6 +5,7 @@ import { ExpiryAlert } from "@/components/custom/ExpiryAlert/ExpiryAlert";
 import Image from "next/image";
 import { ProductCountCard } from "@/components/custom/ProductCountCard/ProductCountCard";
 import { MedicineDetailsTable } from "@/components/custom/MedicineDetailsTable/MedicineDetailsTable";
+import { StockOverviewTable } from "@/components/custom/StockOverviewTable/StockOverviewTable";
 
 export default function Home() {
   const cardConfig = [
@@ -86,7 +87,7 @@ export default function Home() {
       <div className="flex flex-row gap-4 pt-[32px]">
         <div className="flex flex-col gap-[12px]">
           <h1 className="text-2xl font-bold">
-            Hi Dr. Sachin! Let's check in with your patients
+            Hi Dr. Sachin! Let&apos;s check in with your patients
           </h1>
           <p className="text-sm text-gray-500">
             Welcome to your dashboard. Everything you need to provide excellent
@@ -121,6 +122,7 @@ export default function Home() {
               );
             })}
           </div>
+          <StockOverviewTable />
         </div>
       </CardWrapper>
 
