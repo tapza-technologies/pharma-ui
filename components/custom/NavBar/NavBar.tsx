@@ -11,7 +11,7 @@ import {
 
 export const NavBar = () => {
   return (
-    <div className="flex flex-row justify-between items-center h-[70px] bg-white px-[64px] py-[14px]">
+    <div className="flex flex-row justify-between items-center h-[70px] bg-white px-[64px] py-[14px] border-b border-gray-200">
       <div className="flex flex-row gap-2 items-center">
         <Image src="/icons/navbar-logo.svg" alt="Logo" width={20} height={20} />
         {/* Breadcrumb */}
