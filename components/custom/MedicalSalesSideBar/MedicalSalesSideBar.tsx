@@ -44,7 +44,7 @@ export const MedicalSalesSideBarItem = ({
     <Link href={href}>
       <div
         className={`${
-          isActive ? "bg-[#F7F7F9]" : "bg-white"
+          isActive ? "bg-[#F7F7F9] text-[#03B0EF]" : "bg-white"
         } rounded-[8px] px-[16px] py-[16px] flex flex-row gap-[12px] items-center text-sm hover:bg-[#F7F7F9]`}
       >
         <Image src="/icons/sales-sidebar-icon.svg" alt="Medical Sales" width={20} height={20} />
