@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export type actionCTA = {
   label: string;
   onClick?: () => void;
+  href?: string;
 };
 
 export type CardProps = {
@@ -34,22 +36,28 @@ export const Card = ({
         </div>
         <p className="text-sm text-gray-500">{description}</p>
         <div className="flex flex-row gap-2">
-          <Button
-            key={actionCTAs[0].label}
-            variant="secondary"
-            style={{ backgroundColor: buttonColor, color: "white" }}
-            className="p-[20px]"
-          >
-            {actionCTAs[0].label}
-          </Button>
-          <Button
-            key={actionCTAs[1].label}
-            variant="secondary"
-            style={{ backgroundColor: "white", color: buttonColor}}
-            className="p-[20px]"
-          >
-            {actionCTAs[1].label}
-          </Button>
+          {actionCTAs[0] && (
+            <Button
+              key={actionCTAs[0]?.label}
+              variant="secondary"
+              style={{ backgroundColor: buttonColor, color: "white" }}
+              className="p-[20px] cursor-pointer"
+            >
+              {actionCTAs[0]?.label}
+            </Button>
+          )}
+          {actionCTAs[1] && (
+            <Link href={actionCTAs[1].href || ""}>
+              <Button
+                key={actionCTAs[1].label}
+                variant="secondary"
+                style={{ backgroundColor: "white", color: buttonColor }}
+                className="p-[20px] cursor-pointer"
+              >
+                {actionCTAs[1].label}
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
