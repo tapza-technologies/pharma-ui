@@ -31,7 +31,7 @@ export default function Home() {
       title: "Medical Sales",
       description:
         "View comprehensive analytics and key metrics for your practice.",
-      actionCTAs: [{ label: "Add Sales" }, { label: "View Dashboard" }],
+      actionCTAs: [{ label: "Add Sales" }, { label: "View Dashboard", href: "/medical-sales/sales" }],
       color: "yellow",
       backgroundColor: "linear-gradient(117deg, #FFF -15.79%, #FDE699 102.61%)",
       buttonColor: "#FEC320",
@@ -50,7 +50,7 @@ export default function Home() {
         "View comprehensive analytics and key metrics for your practice.",
       actionCTAs: [{ label: "Add Purchase" }, { label: "View Dashboard" }],
       color: "purple",
-      backgroundColor: "linear-gradient(135deg, #FEFDFE 0%, #DCD1F2 100%);",
+      backgroundColor: "linear-gradient(135deg, #FEFDFE 0%, #DCD1F2 100%)",
       buttonColor: "#6B21A8",
     },
   ];
@@ -83,7 +83,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="px-[64px] bg-muted min-h-screen pb-[48px]">
+    <div className="px-[64px] bg-muted min-h-screen pb-[48px] pt-[70px]">
       <div className="flex flex-row gap-4 pt-[32px]">
         <div className="flex flex-col gap-[12px]">
           <h1 className="text-2xl font-bold">
